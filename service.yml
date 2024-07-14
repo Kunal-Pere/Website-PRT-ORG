@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: prtimage-service
+  name: prt-service
 spec:
   selector:
-    app: prtimage
-  type: NodePort
+    app: prt  
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30080
+      port: 80  
+      targetPort: 80  
+      nodePort: 30080  
+  type: NodePort  
