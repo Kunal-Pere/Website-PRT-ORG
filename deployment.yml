@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: n
+  name: kunal1010/prtimage
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: kunal1010/prtimage
   template:
     metadata:
       labels:
-        app: nginx
+        app: kunal1010/prtimage
     spec:
       containers:
-        - name: nginx-container
-          image: nginx:1.7.1
+        - name: kunal1010/prtimage-container
+          image: kunal1010/prtimage
           ports:
             - containerPort: 80
